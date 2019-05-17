@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exámen - TestMaker</title>
+	<link rel="stylesheet" href="..\public\css\stylehacerTest.css">
+	<script type="text/javascript" src="..\js\hacerTest.js"></script>
+	<link rel="shortcut icon" type="image/png" href="../public/images/cube_fvf.png"/>
+</head>
+<body onload="ponerUsuario(), cargarTest()">
+	<header class="titleP">
+			<img src="..\public\images\TestMaker_logo.png" height="150" width="300">
+	</header>
+	<div class="userName" id="username">
+	</div>
+
+	<div class="titleTest">
+		<input type="text" name="titleTest" placeholder="Nombre del test" id="inputtTest" readonly="readonly">
+	</div>
+	<div class="testBox" id="tstBox">
+		<div class="questBox" id="questbox1">
+			<div class="questBoxInd">
+				<div class="quest">
+					<input type="text" name="Quest" placeholder="Pregunta" id="inputtQuest1" readonly="readonly">
+				</div>
+				<div class="optionA">
+					<input type="radio" name="answ1" id="radA1">
+					<input type="text" name="oneA" placeholder="Opción A" id="inputoneA1" readonly="readonly">	
+				</div>
+				<div class="optionB">
+					<input type="radio" name="answ1" id="radB1">
+					<input type="text" name="oneB" placeholder="Opción B" id="inputoneB1" readonly="readonly">	
+				</div>
+				<div class="optionC">
+					<input type="radio" name="answ1" id="radC1">
+					<input type="text" name="oneC" placeholder="Opción C" id="inputoneC1" readonly="readonly">					
+				</div>
+				<div class="optionD">
+					<input type="radio" name="answ1" id="radD1">
+					<input type="text" name="oneD" placeholder="Opción D" id="inputoneD1" readonly="readonly">	
+				</div>
+			</div>
+			<br>
+			<br>
+		</div>
+	</div>
+	<div class="botonMenu">
+		<input type="submit" name="botMenu" id="btnMenu" class="Menu" value="Menú" onclick="location.href='menuTest.html';">
+		<span class="tooltipMenu">Si aún no estás listo, puedes regresar al menú.</span>
+	</div>
+	<div class="botonCalificar">
+		<input type="submit" name="botCalificar" id="btnCalificar" value="Calificar" onclick="calificarTest()">
+		<span class="tooltipCalificar">Si ya estás seguro de tus respuestas, presiona el botón.</span>
+	</div>
+	
+</body>
+</html>

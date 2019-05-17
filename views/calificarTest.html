@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calificar - TestMaker</title>
+	<link rel="stylesheet" href="..\public\css\stylecalificarTest.css">
+	<script type="text/javascript" src="..\js\calificarTest.js"></script>
+	<link rel="shortcut icon" type="image/png" href="../public/images/cube_fvf.png"/>
+</head>
+<body onload="cargarCalificacion()">
+	<header class="titleP">
+			<img src="..\public\images\TestMaker_logo.png" height="150" width="300">
+	</header>
+	<div class="userName" id="username">
+	</div>
+
+	<div class="calBox" id="calbox"></div>
+
+	
+	<div class="botonMenu">
+		<input type="submit" name="botMenu" id="btnMenu" class="Menu" value="Menú" onclick="location.href='menuTest.html';">
+	</div>
+	<div class="botonMejorar">
+		<input type="submit" name="botMejorar" id="btnMejorar" value="Mejoraré" onclick="location.href='hacerTest.html'">
+		<span class="tooltipMejorar">¿Quieres otra oportunidad? Adelante, presiónalo.</span>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TestMaker</title>
+	<link rel="stylesheet" href="public/css/styleIndex.css">
+	<script type="text/javascript" src="js\index.js"></script>
+	<link rel="shortcut icon" type="image/png" href="public/images/cube_fvf.png"/>
+</head>
+<body onload="validarSe()">
+	<frame src="index.html" name="index">
+	<header class="titleP">
+		<a href="index.html">
+			<img src="public/images/TestMaker_logo.png" height="150" width="300">
+		</a>
+	</header>
+	<div class="mainTxt">
+        <p>Ponte a prueba.</p>
+        <p>Crea y supera.</p>
+	</div>
+	<div class="loginContainer">
+		<div class="loginTitle">	
+			<p>Bienvenido.</p> 
+			<p>¿Estás listo?</p>
+		</div>
+
+		<div class="boxUser">
+			<div class="title_fieldUser">
+				<p>Usuario</p>
+			</div>
+			<div class="fieldUser">
+				<input type="text" id="user" name="usuario" maxlength="17" required onkeypress="return letrasynumeros(event);" onKeyUp="this.value">
+				<span class="tooltipUser">Recuerda que tu Usuario es sensible a Mayús.</span>
+			</div>
+			<br>
+			<div class="title_fieldPass">
+				<p>Contraseña</p>
+			</div>
+			<div class="fieldPass">
+				<input type="password" id="pass" name="pass" maxlength="10" required onkeypress="return letrasynumeros(event);" onKeyUp="this.value">
+				<span class="tooltipPass">Recuerda que tu Contraseña es sensible a Mayús.</span>
+
+			</div>
+			<div class="buttonIngresar">
+				<input type="submit" value="Ingresar" onclick="validar()">
+			</div>
+			
+			<div class="registroCuenta">
+				<p><a href="views/registro.html" style="text-decoration: none;color: white">¿No tienes cuenta? Registrate ahora.</a></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

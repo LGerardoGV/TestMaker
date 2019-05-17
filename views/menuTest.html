@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menú - TestMaker</title>
+	<link rel="stylesheet" href="..\public\css\stylemenuTest.css">
+	<script type="text/javascript" src="../js/menuTest.js"></script>
+	<link rel="shortcut icon" type="image/png" href="../public/images/cube_fvf.png"/>
+</head>
+<body onload="ponerNombre(),obtenerDatos()">
+	<header class="titleP">
+			<img src="..\public\images\TestMaker_logo.png" height="150" width="300">
+	</header>
+
+	<div class="userName" id="username"></div>
+
+	<div class="infoTest" id="infotest"></div>
+
+	<div class="menuBox">
+		<div class="inputBox">
+			<div class="btnEdit">
+				<input type="submit" name="editTest" value="Crear/Editar Test" id="edTest"  onclick="location.href='editarTest.html';">
+			</div>
+			
+			<div class="btnMake">
+				<input type="submit" name="makeTest" value="Hacer Test" id="mkTest" onclick="location.href='hacerTest.html';">
+	        </div>         
+	        
+	        <div class="btnClose">
+				<input type="submit" name="closeSS" value="Cerrar Sesión" id="clTest" onclick="cerrarS()">
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

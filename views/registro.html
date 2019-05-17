@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regístrate - TestMaker</title>
+	<link rel="stylesheet" href="..\public\css\styleRegistro.css">
+	<script type="text/javascript" src="..\js\registro.js"></script>
+	<link rel="shortcut icon" type="image/png" href="../public/images/cube_fvf.png"/>
+</head>
+<body onload="validarS()">
+	<header class="titleP">
+		<a href="..\index.html">
+			<img src="..\public\images\TestMaker_logo.png" height="150" width="300">
+		</a>
+	</header>
+	<div class="mainTxt">
+        <p>Ponte a prueba.</p>
+        <p>Crea y supera.</p>
+	</div>
+	<div class="loginContainer">
+		<div class="loginTitle">	
+			<p>Registro.</p> 
+			<p>Fácil y rápido.</p>
+		</div>
+
+		<div class="boxUser">
+			<div class="title_fieldUser">
+				<p>Nombre de usuario</p>
+			</div>
+			<div class="fieldUser">
+				<input type="text" id="user" name="usuario" maxlength="17" required onkeypress="return letrasynumeros(event);" onKeyUp="this.value">
+				<span class="tooltipUser">Nombre de usuario máximo 17 carácteres.</span>
+			</div>
+
+			<br>
+			<div class="title_fieldPass">
+				<p>Contraseña</p>
+			</div>
+			<div class="fieldPass">
+				<input type="password" id="pass" name="pass" maxlength="10" equired onkeypress="return lym_sinespacio(event);" onKeyUp="this.value">
+				<span class="tooltipPass">Contraseña máximo 10 carácteres.</span>
+			</div>
+			<br>
+			<div class="title_fieldPassConfirm">
+				<p>Confirmar Contraseña</p>
+			</div>
+			<div class="fieldPassConfirm">
+				<input type="password" id="passC" name="passC" maxlength="10" equired onkeypress="return lym_sinespacio(event);" onKeyUp="this.value">
+			</div>
+			<div class="buttonIngresar">
+				<input type="submit" value="Empezar" onclick="registrar()">
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exámen - TestMaker</title>
+	<link rel="stylesheet" href="..\public\css\styleeditarTest.css">
+	<script type="text/javascript" src="..\js\editarTest.js"></script>
+	<link rel="shortcut icon" type="image/png" href="../public/images/cube_fvf.png"/>
+</head>
+<body onload="ponerUsuario(), cargarTest()">
+	<header class="titleP">
+			<img src="..\public\images\TestMaker_logo.png" height="150" width="300">
+	</header>
+
+	<div class="userName" id="username">
+	</div>
+
+	<div class="infoTest" id="infotest"></div>
+	
+	<div class="helpB">
+		<input type="submit" name="help" class="helpButton" value="?">
+		<span class="tooltipAgregar">Agrega las preguntas que quieras.</span>
+		<span class="tooltipTerminar">No te preocupes, después podrás editarlo si quieres.</span>
+		<span class="tooltipRadio">Elige la respuesta correcta de tu pregunta.</span>
+	</div>
+
+	<div class="titleTest">
+		<input type="text" name="titleTest" placeholder="Nombre del test" id="inputtTest" required onkeypress="return letrasynumeros(event);" onKeyUp="this.value" maxlength="90">
+	</div>
+	<div class="testBox" id="tstBox">
+		<div class="questBox" id="questbox1">
+			<div class="questBoxInd">
+				<div class="quest">
+					<input type="text" name="Quest" placeholder="Pregunta" id="inputtQuest1" required onkeypress="return letrasynumeros(event);" onKeyUp="this.value">
+				</div>
+				<div class="optionA">
+					<input type="radio" name="answ1" id="radA1">
+					<input type="text" name="oneA" placeholder="Opción A" id="inputoneA1" required onkeypress="return letrasynumeros(event);" onKeyUp="this.value">	
+				</div>
+				<div class="optionB">
+					<input type="radio" name="answ1" id="radB1">
+					<input type="text" name="oneB" placeholder="Opción B" id="inputoneB1" required onkeypress="return letrasynumeros(event);" onKeyUp="this.value">	
+				</div>
+				<div class="optionC">
+					<input type="radio" name="answ1" id="radC1">
+					<input type="text" name="oneC" placeholder="Opción C" id="inputoneC1" required onkeypress="return letrasynumeros(event);" onKeyUp="this.value">					
+				</div>
+				<div class="optionD">
+					<input type="radio" name="answ1" id="radD1">
+					<input type="text" name="oneD" placeholder="Opción D" id="inputoneD1" required onkeypress="return letrasynumeros(event);" onKeyUp="this.value">	
+				</div>
+			</div>
+			<br>
+			<br>
+		</div>
+	</div>
+	<div class="botonAgregar">
+		<input type="submit" name="botAgregar" id="btnAgregar" class="agregar" value="+" onclick="addQuest(), moveScroll()">
+		
+	</div>
+	<div class="botonTerminar">
+		<input type="submit" name="botTerminar" id="btnTerminar" value="Terminar" onclick="guardarTest()">
+	</div>
+	
+</body>
+</html>

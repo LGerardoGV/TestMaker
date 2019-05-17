@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*			header			*/
+body,html{
+	background-image: url('../images/wallpaper_writeres1pbdes.jpg');
+	background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+	height: 100%;
+	width: 100%;
+}
+
+.titleP{
+    position: fixed;
+    width: 100%;
+    height: 5em;
+    opacity: 0.90;
+    background-color:white;
+    margin-top: 0%;
+    box-shadow: 0px 1px 50px 0px lightblue;
+}
+
+header>img{
+    position: fixed;
+   	margin-left: 4%;
+    margin-top: -37px;
+}
+
+.userName{
+    position: fixed;
+    width: 25%;
+    height: 10%;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.userName>p1{
+    font-size: 2em;
+    font-family: 'Open Sans','Segoe UI', 'Arial', sans-serif;
+    padding: 10px;
+    color:white;
+}
+
+.userName>p2{
+    font-size: 1.8em;
+    font-family: 'Open Sans','Segoe UI', 'Arial', sans-serif;
+    padding: 10px;
+    color:white;
+
+}
+
+/*			body			*/
+
+.testBox{
+    position: fixed;
+    width: 50%;
+    height: 70%;
+    background-image: url("");
+    margin-left: 25%;
+    margin-top: 13%;
+    overflow: scroll;
+    overflow-x:hidden;
+}
+
+.testBox::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+.testBox::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 5px 5px 0px white; 
+    border-radius: 5px;
+}
+ 
+.testBox::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 5px 5px 0px #0F69CB; 
+}
+
+.titleTest{
+	position: fixed;
+	width: 50%;
+	height: 10%;
+	margin-left: 25%;
+    margin-top: 6.8%;
+}
+
+.titleTest>input{
+	padding: 15px 0px 10px 0px ;
+	width: 85%;
+	height: 0.5em;
+	font-size: 1.9em;
+	border:0;
+	outline: none;
+	box-shadow: 0px 1px 0px white;
+	background: url("") no-repeat;
+    color:white;
+    margin-left: 7%;
+    margin-top: 1.4%;
+    resize: both;
+
+}
+
+.titleTest>input::-webkit-input-placeholder { 
+    color: white;
+    opacity: 0.8;
+}
+
+.questBox{
+    display: inline-block;
+    width: 100%;
+    margin-top: 0%;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 0px 2px 0px;
+}
+
+.questBoxInd{
+	position: relative;
+	background-image: url("");
+
+}
+
+.botonEliminar{
+	position: absolute;
+	margin-top: 2%;
+	margin-left: 92%;
+	z-index: 2;
+
+}
+.botonEliminar>input{
+	font-family: 'Open Sans';
+	font-size: 1.1em;
+	width: 30px;
+	height: 30px;
+	border:0;
+	color: #0F69CB;
+	border-radius: 100px;
+	background-color:white;
+	outline: none;
+}
+
+.botonEliminar>input:hover{
+	opacity: 0.5;
+}
+
+.botonEliminar>input:active{
+	transform: scale(0.95);
+}
+
+.quest>input{
+	padding: 15px 0px 10px 0px ;
+	width: 70%;
+	height: 0.5em;
+	font-size: 1.5em;
+	border:0;
+	outline: none;
+	box-shadow: 0px 1px 0px white;
+	background: url("") no-repeat;
+    color:white;
+    margin-left: 7%;
+    line-height:10px
+
+}
+
+.quest>input::-webkit-input-placeholder { 
+    color: white;
+    opacity: 0.8;
+}
+
+
+
+.optionA>input[type="text"]{
+	padding: 15px 0px 10px 30px ;
+	width: 50%;
+	height: 0.1em;
+	font-size: 1.3em;
+	border:0;
+	outline: none;
+	box-shadow: 0px 1px 0px white;
+	background: url("") no-repeat;
+    color:white;
+    margin-left: 7%;
+    margin-top: 3.8%;
+}
+
+.optionA>input[type="radio"]{
+	position: absolute;
+ 	width: 20px;
+ 	height: 20px;
+ 	margin-top: 4.5%;
+ 	margin-left: 7%;
+}
+
+.optionB>input[type="text"]{
+	padding: 15px 0px 10px 30px ;
+	width: 50%;
+	height: 0.1em;
+	font-size: 1.3em;
+	border:0;
+	outline: none;
+	box-shadow: 0px 1px 0px white;
+	background: url("") no-repeat;
+    color:white;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+.optionB>input[type="radio"]{
+	position: absolute;
+ 	width: 20px;
+ 	height: 20px;
+ 	margin-top: 2.7%;
+ 	margin-left: 7%;
+
+}
+
+.optionC>input[type="text"]{
+	padding: 15px 0px 10px 30px ;
+	width: 50%;
+	height: 0.1em;
+	font-size: 1.3em;
+	border:0;
+	outline: none;
+	box-shadow: 0px 1px 0px white;
+	background: url("") no-repeat;
+    color:white;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+.optionC>input[type="radio"]{
+	position: absolute;
+ 	width: 20px;
+ 	height: 20px;
+ 	margin-top: 2.7%;
+ 	margin-left: 7%;
+
+}
+
+.optionD>input[type="text"]{
+	padding: 15px 0px 10px 30px ;
+	width: 50%;
+	height: 0.1em;
+	font-size: 1.3em;
+	border:0;
+	outline: none;
+	box-shadow: 0px 1px 0px white;
+	background: url("") no-repeat;
+    color:white;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+.optionD>input[type="radio"]{
+	position: absolute;
+ 	width: 20px;
+ 	height: 20px;
+ 	margin-top: 2.7%;
+ 	margin-left: 7%;
+
+}
+
+
+.optionA>input[type="text"]::-webkit-input-placeholder { 
+    color: white;
+    opacity: 0.8;
+}
+
+.optionB>input[type="text"]::-webkit-input-placeholder { 
+    color: white;
+    opacity: 0.8;
+}
+
+.optionC>input[type="text"]::-webkit-input-placeholder { 
+    color: white;
+    opacity: 0.8;
+}
+
+.optionD>input[type="text"]::-webkit-input-placeholder { 
+    color: white;
+    opacity: 0.8;
+}
+
+.botonMenu>input{
+	position: fixed;
+	margin-top: 43%;
+	margin-left: 5%;
+	color: #0F69CB;
+}
+
+.tooltipMenu{
+	position: absolute;
+    visibility: hidden;
+    width: 70px;
+    background-color: white;
+    border-radius: 10px 10px 0px 10px;
+    padding: 5px;
+    margin-top: 35%;
+    margin-left:1.5%;
+    z-index: 2;
+    font-family: 'Open Sans';
+    font-size: 0.8em;
+    color: #0066cc;
+    text-align: center;
+}
+
+.botonMenu:hover .tooltipMenu{
+    visibility: visible;
+}
+
+.botonMenu>input{
+	padding: 5px;
+	width: 120px;
+    height: 40px;
+	font-size: 0.9em;
+	background:white;
+	border:0;
+	outline: none;
+	cursor: pointer;
+	border-radius: 50px;
+    font-family: 'Open Sans','Segoe UI', 'Arial', sans-serif;
+}
+
+.botonMenu>input:hover{
+	opacity: 0.5;
+}
+
+.botonMenu>input:active{
+	transform: scale(0.95);
+}
+
+.botonCalificar>input{
+	position: fixed;
+	margin-top: 43%;
+	margin-left: 87%;
+	color: #0F69CB;
+}
+
+.tooltipCalificar{
+	position: absolute;
+    visibility: hidden;
+    width: 82px;
+    background-color: white;
+    border-radius: 10px 10px 10px 0px;
+    padding: 5px;
+    margin-top: 35%;
+    margin-left:92%;
+    z-index: 2;
+    font-family: 'Open Sans';
+    font-size: 0.8em;
+    color: #0066cc;
+    text-align: center;
+}
+
+.botonCalificar:hover .tooltipCalificar{
+    visibility: visible;
+}
+
+.botonCalificar>input{
+	padding: 5px;
+	width: 120px;
+    height: 40px;
+	font-size: 0.9em;
+	background:white;
+	border:0;
+	outline: none;
+	cursor: pointer;
+	border-radius: 50px;
+    font-family: 'Open Sans','Segoe UI', 'Arial', sans-serif;
+}
+
+.botonCalificar>input:hover{
+	opacity: 0.5;
+}
+
+.botonCalificar>input:active{
+	transform: scale(0.95);
+}
+
+
+
+
+
+
+
